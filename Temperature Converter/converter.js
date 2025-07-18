@@ -1,7 +1,7 @@
 let celsiusRadio = document.getElementById("celsius");
 let fahrenheitRadio = document.getElementById("fahrenheit");
 let kelvinRadio = document.getElementById("kelvin");
-let rankineRadio = document.getElementById("rankine");
+let rankineRadio = document.getElementById("Rankine");
 let convertButton = document.getElementById("convert");
 let tempInput = document.getElementById("tempInput");
 let result1 = document.getElementById("result1");
@@ -29,7 +29,7 @@ convertButton.onclick = function() {
         result3.textContent = `${temp} K = ${temp * 9/5} °R`;
     } else if (rankineRadio.checked) {
         result1.textContent = `${temp} °R = ${(temp - 491.67) * 5/9 + 273.15} K`;
-        result2.textContent = `${temp} °R = ${(temp - 491.67) * 5/9 + 32} °F`;
-        result3.textContent = `${temp} °R = ${(temp - 491.67) * 5/9 + 273.15 - 273.15} °C`;
+        result2.textContent = `${temp} °R = ${temp - 459.67} °F`;
+        result3.textContent = `${temp} °R = ${(temp - 491.67) * 5/9} °C`;
     }
 }

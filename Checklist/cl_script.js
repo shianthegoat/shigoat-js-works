@@ -6,12 +6,12 @@ const message = document.getElementById('message');
 
 submitBtn.onclick = function(){
     if(maleBtn.checked){
-        message.textContent = '8===D';
+        message.textContent = 'You selected: Male';
     }
     else if(femaleBtn.checked){
-        message.textContent = '(.)(.)';
+        message.textContent = 'You selected: Female';
     }
     else if(otherBtn.checked){
-        message.textContent = 'gae';
+        message.textContent = 'You selected: Other';
     }
 }

@@ -34,10 +34,11 @@ document.getElementById("backspaceBtn").onclick = () => {
   updateDisplay();
 };
 
+// Make sure to include mathjs in your HTML: <script src="https://cdn.jsdelivr.net/npm/mathjs@11.8.0/lib/browser/math.js"></script>
 document.getElementById("equalsBtn").onclick = () => {
   try {
     const expression = currentInput.replace(/%/g, "/100");
-    currentInput = eval(expression).toString();
+    currentInput = math.evaluate(expression).toString();
     updateDisplay();
   } catch {
     currentInput = "Error";
