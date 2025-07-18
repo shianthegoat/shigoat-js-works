@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+</head>
+<body>
+   <h1>Temperature Converter</h1>
+   <p>Select 2 different measures of temperature for conversion</p>
+   <div id="selection1">
+    <input type="radio" name="temp1" id="celsius" value="celsius">
+    <label for="celsius">Celsius</label>
+    <input type="radio" name="temp1" id="fahrenheit" value="fahrenheit">
+    <label for="fahrenheit">Fahrenheit</label>
+    <input type="radio" name="temp1" id="kelvin" value="kelvin">
+    <label for="kelvin">Kelvin</label>
+    <input type="radio" name="temp1" id="Rankine" value="rankine">
+    <label for="kelvin">Rankine</label>
+   </div>
+    <input type="text" id="tempInput" placeholder="Enter temperature">
+    <button id="convert">Convert</button>
+    <p id="result1"></p>
+    <p id="result2"></p>
+    <p id="result3"></p>
+    <script src="converter.js"></script>
+</body>
+</html>

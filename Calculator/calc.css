@@ -1,0 +1,102 @@
+.calculator {
+  width: 320px;
+  margin: 60px auto;
+  background: #222;
+  border-radius: 40px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.6), 0 1.5px 0 #444;
+  padding: 32px 16px 24px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.display {
+  background: #111;
+  color: #fff;
+  font-size: 2.6rem;
+  text-align: right;
+  border-radius: 18px;
+  padding: 24px 16px 16px 16px;
+  margin-bottom: 12px;
+  min-height: 48px;
+  font-family: 'SF Pro Display', 'Segoe UI', Arial, sans-serif;
+  letter-spacing: 1px;
+  box-shadow: 0 1.5px 0 #333;
+  user-select: none;
+}
+
+.button-row {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  flex: 1 1 0;
+  height: 56px;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 50%;
+  margin: 0;
+  outline: none;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: filter 0.1s, box-shadow 0.1s;
+  user-select: none;
+}
+
+.btn:active {
+  filter: brightness(0.92);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.18);
+}
+
+.btn.number {
+  background: linear-gradient(180deg, #333 60%, #222 100%);
+  color: #fff;
+}
+
+.btn.number.zero {
+  flex: 2.15 1 0;
+  border-radius: 28px;
+  text-align: left;
+  padding-left: 28px;
+}
+
+.btn.operator {
+  background: linear-gradient(180deg, #ffb340 60%, #ff9500 100%);
+  color: #fff;
+  font-size: 1.7rem;
+  box-shadow: 0 2px 8px rgba(255,149,0,0.15);
+}
+
+.btn.function {
+  background: linear-gradient(180deg, #a5a5a5 60%, #6b6b6b 100%);
+  color: #222;
+}
+
+.btn.equals {
+  background: linear-gradient(180deg, #ffb340 60%, #ff9500 100%);
+  color: #fff;
+  font-size: 1.7rem;
+  box-shadow: 0 2px 8px rgba(255,149,0,0.15);
+}
+
+.btn:focus {
+  outline: 2px solid #fff2;
+}
+
+@media (max-width: 400px) {
+  .calculator {
+    width: 98vw;
+    padding: 8vw 2vw 4vw 2vw;
+  }
+  .display {
+    font-size: 2rem;
+    padding: 16px 8px 8px 8px;
+  }
+  .btn {
+    height: 40px;
+    font-size: 1.1rem;
+  }
+}
